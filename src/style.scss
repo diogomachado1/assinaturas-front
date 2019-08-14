@@ -1,0 +1,71 @@
+.signatureForm{
+    display:flex;
+    flex-wrap: wrap;
+    width: auto !important;
+    &>div{
+        display:flex;
+        flex-direction: column;
+        flex-grow: 1;
+        &:first-child{
+            margin-right: 24px;
+            max-width: 400px;
+        }
+        &:last-child{
+            flex-grow: 4;
+        }
+    }
+    &>div>img{
+        width: 100%;
+    }
+
+}
+
+.signatureArray{
+    &>ul>div>li{
+        display: flex;
+        flex-direction: column;
+        &>p{
+            display: none;
+        }
+    }
+}
+.clipBoard{
+    position: relative;
+    margin-top:10px;
+    pre{
+        margin:0;
+        &>code{
+            padding: 1em;
+            border-radius: 5px;
+        }
+    }
+    &>.clipBoardButton{
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 0.3;
+        transition: all 0.6s;
+        background-color: rgb(170, 170, 170);
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+        border:none;
+        border-radius:0 5px 0 5px;
+        cursor: pointer;
+        &>svg{
+            fill: aliceblue;
+        }
+        &.success{
+            background-color: #4da45a;
+            opacity: 1;
+        }
+        &:hover{
+            opacity: 1;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+body{
+    margin:0;
+}

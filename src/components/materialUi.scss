@@ -1,0 +1,38 @@
+.contactsArray{
+    display: flex;
+    flex-direction: column;
+    &>li{
+        list-style: none;
+        display: flex;
+        margin-bottom: 10px;
+        &>span{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            &>div{
+                margin-bottom: 5px;
+            }
+        }
+        &>div{
+
+            display: flex;
+            flex-direction: column;
+            margin-right: 5px;
+            &>button{
+                width: 35px;
+                height: 35px;
+            }
+            &>.removeContact{
+                margin-bottom: auto;
+                margin-top: auto;
+                &>span>svg{
+                    fill:#f44336;
+                }
+            }
+
+        }
+    }
+    &>button{
+        margin: 5px 0;
+    }
+}
