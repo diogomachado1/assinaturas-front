@@ -33,8 +33,8 @@ const preview = AwesomeDebouncePromise((formData) => {
     )
 }, 500);
 
-const validateFields = [required('Campo obrigatório'), minLength(3, 'Tamanho  mínimo 3'), maxLength(30, 'Tamanho  máximo 30')];
-const validateEmail = [required('Campo obrigatório'), minLength(3, 'Tamanho  mínimo 3'), maxLength(30, 'Tamanho  máximo 30'), email('E-mail inválido')];
+const validateFields = [required('Campo obrigatório'), minLength(3, 'Tamanho  mínimo 3'), maxLength(30, 'Tamanho  máximo 33')];
+const validateEmail = [required('Campo obrigatório'), minLength(3, 'Tamanho  mínimo 3'), maxLength(30, 'Tamanho  máximo 35'), email('E-mail inválido')];
 export const SignatureList = props => (
     <List title="Assinaturas" filters={<SignatureFilter />} {...props}>
         <Datagrid>
