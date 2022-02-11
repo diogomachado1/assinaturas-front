@@ -5,7 +5,7 @@
   "dependencies": {
     "awesome-debounce-promise": "^2.1.0",
     "jwt-decode": "^2.2.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.7.2",
     "ra-data-json-server": "^2.9.4",
     "react": "^16.8.6",
